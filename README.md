@@ -8,6 +8,8 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
+Adds Backpack 4 compatibility
+
 This is a package developed by us for internal use. It is supposed to help us during development and save plenty of time by automating many steps while creating typical CRUD entities with [Laravel Backpack](https://laravel-backpack.readme.io/docs). You can write your own Services (they have to implement `Webfactor\Laravel\Generators\Contracts\ServiceInterface`) and register them in the `generators.php` config file, or use this package as an inspiration for your own implementation.
 
 ## Install
@@ -17,7 +19,7 @@ This is a package developed by us for internal use. It is supposed to help us du
 This package is indended to be used only for development, not for production. Because of that we recommend to use `require-dev`:
 
 ``` bash
-composer require --dev webfactor/laravel-generators
+composer require --dev KamilCiosek/laravel-generators
 ```
 
 ## Usage
