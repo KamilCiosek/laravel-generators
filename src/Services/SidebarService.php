@@ -26,13 +26,14 @@ class SidebarService extends ServiceAbstract implements ServiceInterface
 
     private function getSidebarString()
     {
-        return <<<FILE
-
-<li>
-    <a href="{{ backpack_url('{$this->command->naming['routeFile']->getName()}') }}">
-        <i class="fa fa-question"></i><span>{{ trans('models.{$this->command->naming['languageFile']->getName()}.plural') }}</span>
+        
+return <<<FILE
+<li class="nav-item">
+    <a class="nav-link" href="{{ backpack_url('{$this->command->naming['routeFile']->getName()}') }}">
+        <i class="fa fa-file nav-icon"></i><span>{{ trans('models.{$this->command->naming['languageFile']->getName()}.plural') }}</span>
     </a>
 </li>
 FILE;
+        
     }
 }
